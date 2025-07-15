@@ -72,8 +72,8 @@ keyboard = InlineKeyboardMarkup(
 
 # Image URLs for the random image feature
 image_urls = [
-    "https://tinypic.host/images/2025/02/07/IMG_20250207_224444_975.jpg",
-    "https://tinypic.host/images/2025/02/07/DeWatermark.ai_1738952933236-1.png",
+    "https://files.catbox.moe/jgtnku.jpg",
+    "https://files.catbox.moe/tzgp7v.jpg",
     # Add more image URLs as needed
 ]
 
@@ -1136,12 +1136,12 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'[🎥]Vid Id : {str(count).zfill(3)}\n**Video Title :** `{name1} [{res}p].mkv`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
-                cc1 = f'[📕]Pdf Id : {str(count).zfill(3)}\n**File Title :** `{name1}.pdf`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
-                cczip = f'[📁]Zip Id : {str(count).zfill(3)}\n**Zip Title :** `{name1}.zip`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n' 
-                ccimg = f'[🖼️]Img Id : {str(count).zfill(3)}\n**Img Title :** `{name1}.jpg`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
-                ccm = f'[🎵]Audio Id : {str(count).zfill(3)}\n**Audio Title :** `{name1}.mp3`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
-                cchtml = f'[🌐]Html Id : {str(count).zfill(3)}\n**Html Title :** `{name1}.html`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
+                cc = f'[🎥]Vid Id : {str(count).zfill(3)}\n**Video Title :** `{name1} [{res}p].mkv`\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n╔.★. .═════════════╗\n\n 𓇼{CR} 𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>'
+                cc1 = f'[📕]Pdf Id : {str(count).zfill(3)}\n**File Title :** `{name1}.pdf`\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n╔.★. .═════════════╗\n\n 𓇼{CR} 𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>'
+                cczip = f'[📁]Zip Id : {str(count).zfill(3)}\n**Zip Title :** `{name1}.zip`\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n╔.★. .═════════════╗\n\n 𓇼{CR} 𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>' 
+                ccimg = f'[🖼️]Img Id : {str(count).zfill(3)}\n**Img Title :** `{name1}.jpg`\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n╔.★. .═════════════╗\n\n 𓇼{CR} 𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>'
+                ccm = f'[🎵]Audio Id : {str(count).zfill(3)}\n**Audio Title :** `{name1}.mp3`\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n╔.★. .═════════════╗\n\n 𓇼{CR} 𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>'
+                cchtml = f'[🌐]Html Id : {str(count).zfill(3)}\n**Html Title :** `{name1}.html`\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n╔.★. .═════════════╗\n\n 𓇼{CR} 𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>'
                   
                 if "drive" in url:
                     try:
