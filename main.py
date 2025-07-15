@@ -845,7 +845,7 @@ async def send_logs(client: Client, m: Message):  # Correct parameter name
         await m.reply_text(f"**Error sending logs:**\n<blockquote>{e}</blockquote>")
 
 
-@bot.on_message(filters.command(["drm"]) )
+@bot.on_message(filters.command(["cyrus"]) )
 async def txt_handler(bot: Client, m: Message):  
     global processing_request, cancel_requested, cancel_message
     processing_request = True
