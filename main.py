@@ -72,8 +72,8 @@ keyboard = InlineKeyboardMarkup(
 
 # Image URLs for the random image feature
 image_urls = [
-    "https://files.catbox.moe/49rsvv.jpg",
-    "https://files.catbox.moe/yhq8l7.jpg",
+    "https://files.catbox.moe/omp55j.jpg",
+    "https://files.catbox.moe/omp55j.jpg",
     # Add more image URLs as needed
 ]
 
@@ -673,7 +673,7 @@ async def upgrade_button(client, callback_query):
     
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://envs.sh/GVI.jpg",
+      media="https://files.catbox.moe/49rsvv.jpg",
       caption=caption
     ),
     reply_markup=keyboard
@@ -754,7 +754,7 @@ async def custom_button(client, callback_query):
   caption = f"**🖋️ Custom File Name:**\n\nSupport for Custom Name before the File Extension.\nAdd name ..when txt is uploading"
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://files.catbox.moe/49rsvv.jpg",
+      media="https://files.catbox.moe/omp55j.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -766,7 +766,7 @@ async def titlle_button(client, callback_query):
   caption = f"**Custom Title Feature :**\nAdd and customize titles at the starting\n**NOTE 📍 :** The Titile must enclosed within (Title), Best For appx's .txt file."
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://files.catbox.moe/49rsvv.jpg",
+      media="https://files.catbox.moe/omp55j.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -790,7 +790,7 @@ async def editor_button(client, callback_query):
   caption = f"**🤖 Available Commands 🗓️**\n◆/t2t for text to .txt file\n"
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://files.catbox.moe/49rsvv.jpg",
+      media="https://files.catbox.moe/omp55j.jpg",
       caption=caption
       ),
       reply_markup=keyboard
