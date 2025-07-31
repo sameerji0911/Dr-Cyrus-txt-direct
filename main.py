@@ -612,7 +612,7 @@ async def help_button(client, callback_query):
     
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://files.catbox.moe/tzgp7v.jpg",
+      media="https://files.catbox.moe/omp55j.jpg",
       caption=caption
     ),
     reply_markup=keyboard
@@ -639,7 +639,7 @@ async def help_button(client, callback_query):
     
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://files.catbox.moe/tzgp7v.jpg",
+      media="https://files.catbox.moe/omp55j.jpg",
       caption=caption
     ),
     reply_markup=keyboard
@@ -693,7 +693,7 @@ async def feature_button(client, callback_query):
   ])
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://files.catbox.moe/tzgp7v.jpg",
+      media="https://files.catbox.moe/omp55j.jpg",
       caption=caption
     ),
     reply_markup=keyboard
@@ -705,7 +705,7 @@ async def pin_button(client, callback_query):
   caption = f"**Auto Pin 📌 Batch Name :**\n\nAutomatically Pins the Batch Name in Channel or Group, If Starting from the First Link."
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://files.catbox.moe/tzgp7v.jpg",
+      media="https://files.catbox.moe/omp55j.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -717,7 +717,7 @@ async def watermark_button(client, callback_query):
   caption = f"**Custom Watermark :**\n\nSet Your Own Custom Watermark on Videos for Added Personalization."
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://files.catbox.moe/tzgp7v.jpg",
+      media="https://files.catbox.moe/omp55j.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -730,7 +730,7 @@ async def restart_button(client, callback_query):
   caption = f"**🔄 Resat Command:**\n\nIf You Want to Resat Your Bot, Simply Use Command /resat."
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://files.catbox.moe/tzgp7v.jpg",
+      media="https://files.catbox.moe/omp55j.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -742,7 +742,7 @@ async def pin_button(client, callback_query):
   caption = f"**🖨️ Bot Working Logs:**\n\n◆/logs - Bot Send Working Logs in .txt File."
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://files.catbox.moe/tzgp7v.jpg",
+      media="https://files.catbox.moe/omp55j.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -754,7 +754,7 @@ async def custom_button(client, callback_query):
   caption = f"**🖋️ Custom File Name:**\n\nSupport for Custom Name before the File Extension.\nAdd name ..when txt is uploading"
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://files.catbox.moe/omp55j.jpg",
+      media="https://files.catbox.moe/49rsvv.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -790,7 +790,7 @@ async def editor_button(client, callback_query):
   caption = f"**🤖 Available Commands 🗓️**\n◆/t2t for text to .txt file\n"
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://files.catbox.moe/yhq8l7.jpg",
+      media="https://files.catbox.moe/49rsvv.jpg",
       caption=caption
       ),
       reply_markup=keyboard
