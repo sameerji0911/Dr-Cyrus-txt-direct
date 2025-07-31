@@ -63,17 +63,17 @@ photozip = 'https://envs.sh/cD_.jpg'
 
 
 # Inline keyboard for start command
-BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/DR_CYRUS_0")]])
+BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/ASPSIR09")]])
 keyboard = InlineKeyboardMarkup(
     [
-        [InlineKeyboardButton(text="🛠️ Help", url="https://t.me/DR_CYRUS_0"), InlineKeyboardButton(text="🛠️ Repo", url="https://files.catbox.moe/70e6bi.jpg")],
+        [InlineKeyboardButton(text="🛠️ Help", url="https://t.me/ASPSIR09"), InlineKeyboardButton(text="🛠️ Repo", url="https://files.catbox.moe/70e6bi.jpg")],
     ]
 )
 
 # Image URLs for the random image feature
 image_urls = [
-    "https://files.catbox.moe/jgtnku.jpg",
-    "https://files.catbox.moe/tzgp7v.jpg",
+    "https://files.catbox.moe/49rsvv.jpg",
+    "https://files.catbox.moe/yhq8l7.jpg",
     # Add more image URLs as needed
 ]
 
@@ -589,7 +589,7 @@ async def help_button(client, callback_query):
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n" 
         f"📌 𝗠𝗮𝗶𝗻 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀:\n\n"  
         f"➥ /start – Bot Status Check\n"
-        f"➥ /killy – Extract from .txt (Auto)\n"
+        f"➥ /asp – Extract from .txt (Auto)\n"
         f"➥ /y2t – YouTube → .txt Converter\n"  
         f"➥ /ytm – YT .txt → .mp3 downloader\n"  
         f"➥ /yt2m – YT link → .mp3 downloader\n"  
@@ -754,7 +754,7 @@ async def custom_button(client, callback_query):
   caption = f"**🖋️ Custom File Name:**\n\nSupport for Custom Name before the File Extension.\nAdd name ..when txt is uploading"
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://files.catbox.moe/tzgp7v.jpg",
+      media="https://files.catbox.moe/omp55j.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -766,7 +766,7 @@ async def titlle_button(client, callback_query):
   caption = f"**Custom Title Feature :**\nAdd and customize titles at the starting\n**NOTE 📍 :** The Titile must enclosed within (Title), Best For appx's .txt file."
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://files.catbox.moe/tzgp7v.jpg",
+      media="https://files.catbox.moe/49rsvv.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -778,7 +778,7 @@ async def pin_button(client, callback_query):
   caption = f"**📢 Broadcasting Support:**\n\n◆/broadcast - 📢 Broadcast to All Users.\n◆/broadusers - 👁️ To See All Broadcasting User"
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://files.catbox.moe/tzgp7v.jpg",
+      media="https://files.catbox.moe/omp55j.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -790,7 +790,7 @@ async def editor_button(client, callback_query):
   caption = f"**🤖 Available Commands 🗓️**\n◆/t2t for text to .txt file\n"
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://files.catbox.moe/tzgp7v.jpg",
+      media="https://files.catbox.moe/yhq8l7.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -845,7 +845,7 @@ async def send_logs(client: Client, m: Message):  # Correct parameter name
         await m.reply_text(f"**Error sending logs:**\n<blockquote>{e}</blockquote>")
 
 
-@bot.on_message(filters.command(["killy"]) )
+@bot.on_message(filters.command(["asp"]) )
 async def txt_handler(bot: Client, m: Message):  
     global processing_request, cancel_requested, cancel_message
     processing_request = True
@@ -1136,12 +1136,12 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'\n╭┈✰┈┈┈╮\n{str(count).zfill(3)}\n╰┈┈┈✰┈╯\n\n**📹 𝗩𝗜𝗗𝗘𝗢 𝗧𝗜𝗧𝗟𝗘 ➬ ** `{name1} [{res}p].mkv`\n\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n\n╔.★. .═════════════╗\n\n 𓇼{CR}𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>'
-                cc1 = f'\n╭┈✰┈┈┈╮\n {str(count).zfill(3)}\n╰┈┈┈✰┈╯\n\n**📁 𝗙𝗜𝗟𝗘 𝗧𝗜𝗧𝗟𝗘  ➬** `{name1}.pdf`\n\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n\n╔.★. .═════════════╗\n\n 𓇼{CR}𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>'
-                cczip = f'\n╭┈✰┈┈┈╮\n {str(count).zfill(3)}\n╰┈┈┈✰┈╯\n\n**Zip Title :** `{name1}.zip`\n\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n\n╔.★. .═════════════╗\n\n 𓇼{CR}𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>' 
-                ccimg = f'\n╭┈✰┈┈┈╮\n {str(count).zfill(3)}\n╰┈┈┈✰┈╯\n\n**Img Title :** `{name1}.jpg`\n\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n\n╔.★. .═════════════╗\n\n 𓇼{CR}𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>'
-                ccm = f'\n╭┈✰┈┈┈╮\n {str(count).zfill(3)}\n╰┈┈┈✰┈╯\n\n**Audio Title :** `{name1}.mp3`\n\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n\n╔.★. .═════════════╗\n\n 𓇼{CR}𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>'
-                cchtml = f'\n╭┈✰┈┈┈╮\n {str(count).zfill(3)}\n╰┈┈┈✰┈╯\n\n**Html Title :** `{name1}.html`\n\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n\n╔.★. .═════════════╗\n\n 𓇼{CR}𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>'
+                cc = f'\n╭┈✰┈┈┈╮\n{str(count).zfill(3)}\n╰┈┈┈✰┈╯\n\n**📹 𝗩𝗜𝗗𝗘𝗢 𝗧𝗜𝗧𝗟𝗘 ➬ ** `{name1}\n├── Extention ➫ @ASPSIR01 💝\n├── Resolution [{res}p].mkv`\n\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n\n╔.★. .═════════════╗\n\n 𓇼{CR}𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>'
+                cc1 = f'\n╭┈✰┈┈┈╮\n {str(count).zfill(3)}\n╰┈┈┈✰┈╯\n\n**📁 𝗙𝗜𝗟𝗘 𝗧𝗜𝗧𝗟𝗘  ➬** `{name1}\n├── Extention ➫ @ASPSIR01 💝\n├── Resolution.pdf`\n\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n\n╔.★. .═════════════╗\n\n 𓇼{CR}𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>'
+                cczip = f'\n╭┈✰┈┈┈╮\n {str(count).zfill(3)}\n╰┈┈┈✰┈╯\n\n**Zip Title :** `{name1}\n├── Extention ➫ @ASPSIR01 💝\n├── Resolution.zip`\n\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n\n╔.★. .═════════════╗\n\n 𓇼{CR}𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>' 
+                ccimg = f'\n╭┈✰┈┈┈╮\n {str(count).zfill(3)}\n╰┈┈┈✰┈╯\n\n**Img Title :** `{name1}\n├── Extention ➫ @ASPSIR01 💝\n├── Resolution.jpg`\n\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n\n╔.★. .═════════════╗\n\n 𓇼{CR}𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>'
+                ccm = f'\n╭┈✰┈┈┈╮\n {str(count).zfill(3)}\n╰┈┈┈✰┈╯\n\n**Audio Title :** `{name1}\n├── Extention ➫ @ASPSIR01 💝\n├── Resolution.mp3`\n\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n\n╔.★. .═════════════╗\n\n 𓇼{CR}𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>'
+                cchtml = f'\n╭┈✰┈┈┈╮\n {str(count).zfill(3)}\n╰┈┈┈✰┈╯\n\n**Html Title :** `{name1}\n├── Extention ➫ @ASPSIR01 💝\n├── Resolution.html`\n\n<blockquote><b>🧿 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➲</b> {b_name}</blockquote>\n\n**💎 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬 ➫**\n\n╔.★. .═════════════╗\n\n 𓇼{CR}𓇼\n\n╚═════════════. .★.╝\n\n<blockquote>『────⟡{CR}⟡────』</blockquote>'
                   
                 if "drive" in url:
                     try:
