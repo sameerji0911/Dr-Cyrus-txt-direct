@@ -498,7 +498,7 @@ async def start(bot, m: Message):
     caption = f"🌟 Welcome {m.from_user.mention} ! 🌟"
     start_message = await bot.send_photo(
         chat_id=m.chat.id,
-        photo="https://files.catbox.moe/tzgp7v.jpg",
+        photo="https://files.catbox.moe/omp55j.jpg",
         caption=caption
     )
 
@@ -572,7 +572,7 @@ async def back_to_main_menu(client, callback_query):
     
     await callback_query.message.edit_media(
       InputMediaPhoto(
-        media="https://envs.sh/GVI.jpg",
+        media="https://files.catbox.moe/49rsvv.jpg",
         caption=caption
       ),
       reply_markup=keyboard
@@ -1625,7 +1625,7 @@ def reset_and_set_commands():
         {"command": "broadcast", "description": "📢 Broadcast to All Users"},
         {"command": "broadusers", "description": "👨‍❤️‍👨 All Broadcasting Users"},
         {"command": "help", "description": "👨‍🏭 Help about the Bot"},
-        {"command": "killy", "description": "📑 Upload .txt file"},
+        {"command": "asp", "description": "📑 Upload .txt file"},
         {"command": "cookies", "description": "📁 Upload YT Cookies"},
         {"command": "y2t", "description": "🔪 YouTube → .txt Converter"},
         {"command": "ytm", "description": "🎶 YT .txt → .mp3 downloader"},
